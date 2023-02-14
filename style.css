@@ -38,6 +38,7 @@ body .date-section {
   padding-top: 20px;
   border-top: 1px dotted;
   font-style: italic;
+  /* defining the box properties and animation properties */
 }
 body .date-section .box-1 {
   color: black;

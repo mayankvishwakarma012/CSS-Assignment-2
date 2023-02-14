@@ -52,6 +52,7 @@ body {
         padding-top: 20px;
         border-top: 1px dotted;
         font-style: italic;
+        /* defining the box properties and animation properties */
         .box-1 {
             @include div;
             border: 2px dashed black;
