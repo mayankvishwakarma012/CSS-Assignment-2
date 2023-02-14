@@ -1,0 +1,89 @@
+$bg-color: #D8DA3D;
+$heading-font: Arial,
+Helvetica,
+sans-serif;
+$paragraph-font: Georgia,
+"Times New Roman",
+Times,
+serif;
+@mixin div {
+    color: black;
+    width: 85%;
+    padding: 5px 10px;
+    margin: 15px 0;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: $paragraph-font;
+    color: #80007E;
+    /* defining sidebar properties */
+    .sidebar {
+        box-sizing: border-box;
+        float: left;
+        width: 200px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                margin: 10px 0px;
+                padding: 5px 10px;
+                background-color: #fff;
+            }
+            li:nth-child(odd) {
+                border-right: 15px solid #FF7F00;
+            }
+            li:nth-child(even) {
+                border-right: 15px solid #0000FF;
+            }
+        }
+    }
+    /* defining main content properties */
+    .main {
+        margin-left: 220px;
+        padding: 0px 20px;
+        h1 {
+            font-family: $heading-font;
+        }
+    }
+    /* defining properties for date section  */
+    .date-section {
+        margin-top: 35px;
+        padding-top: 20px;
+        border-top: 1px dotted;
+        font-style: italic;
+        .box-1 {
+            @include div;
+            border: 2px dashed black;
+        }
+        .box-2 {
+            @include div;
+            text-align: right;
+            border: 2px dashed #FF7F00;
+        }
+        .box-3 {
+            @include div;
+            text-align: center;
+            border: 2px dotted #0000FF;
+        }
+        .box-1:hover,
+        .box-2:hover,
+        .box-3:hover {
+            animation: bounce-box 1s infinite;
+        }
+        @keyframes bounce-box {
+            0% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(15);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    }
+}

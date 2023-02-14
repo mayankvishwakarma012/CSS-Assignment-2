@@ -1,0 +1,83 @@
+body {
+  background-color: #D8DA3D;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #80007E;
+  /* defining sidebar properties */
+  /* defining main content properties */
+  /* defining properties for date section  */
+}
+body .sidebar {
+  box-sizing: border-box;
+  float: left;
+  width: 200px;
+}
+body .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+body .sidebar ul li {
+  margin: 10px 0px;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+body .sidebar ul li:nth-child(odd) {
+  border-right: 15px solid #FF7F00;
+}
+body .sidebar ul li:nth-child(even) {
+  border-right: 15px solid #0000FF;
+}
+body .main {
+  margin-left: 220px;
+  padding: 0px 20px;
+}
+body .main h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .date-section {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px dotted;
+  font-style: italic;
+}
+body .date-section .box-1 {
+  color: black;
+  width: 85%;
+  padding: 5px 10px;
+  margin: 15px 0;
+  border: 2px dashed black;
+}
+body .date-section .box-2 {
+  color: black;
+  width: 85%;
+  padding: 5px 10px;
+  margin: 15px 0;
+  text-align: right;
+  border: 2px dashed #FF7F00;
+}
+body .date-section .box-3 {
+  color: black;
+  width: 85%;
+  padding: 5px 10px;
+  margin: 15px 0;
+  text-align: center;
+  border: 2px dotted #0000FF;
+}
+body .date-section .box-1:hover,
+body .date-section .box-2:hover,
+body .date-section .box-3:hover {
+  animation: bounce-box 1s infinite;
+}
+@keyframes bounce-box {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(15);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */
